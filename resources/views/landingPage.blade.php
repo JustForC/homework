@@ -38,7 +38,7 @@
     <div class="bumper" style="background-image:url({{asset('/seeder/imagesatu.png')}});">
     </div>
 
-    <div class="snapshots-container" style="background-image:url({{asset('/seeder/imagesatu.png')}});">
+    <div class="snapshots-container" style="background-image:url({{asset('/seeder/imagetiga.png')}});">
         <div class="snapshotsTitle" style="text-align:center;">Look At Our Happy Customer!</div>
         @foreach($snapshots as $snapshot)
             <div class="snapshots fade" style="text-align:center;">
@@ -49,11 +49,11 @@
         <a class="next" onclick="plusSnapshots(1)">&#10095;</a>
     </div>
 
-    <div class="favorites-container" style="background-image:url({{asset('/seeder/imagesatu.png')}});">
+    <div class="favorites-container" style="background-image:url({{asset('/seeder/imagetiga.png')}});">
         <div class="favoritesTitle" style="text-align:center;">Our Best Seller!</div>
         @foreach($products as $product)
             <div class="favorites fade" style="text-align:center;">
-                <img class="snapshotImage" src="{{asset($product->path)}}" alt="">
+                <img class="favoriteImage" src="{{asset($product->path)}}" alt="">
             </div>
         @endforeach
         <a class="prev" onclick="plusFavorites(-1)">&#10094;</a>
@@ -199,6 +199,8 @@
         favorites[favoriteIndex-1].style.display = "block";  
     }
     // End Favorites
+
+    
 </script>        
 </body>
 
