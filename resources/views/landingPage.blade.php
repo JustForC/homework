@@ -12,7 +12,9 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <button class='hamburger' onclick="burger()">=</button>
+    <div class="navbar fade">
+        <button class='close' onclick="burger()">X</button>
         <div class="navbarA" style="background-image:url({{asset('/seeder/locoblack.png')}});"></div>
         <div class="navbarB">
             <a href="#">
@@ -125,9 +127,20 @@
         </div>
     </div>
         
-        
-        
 <script>
+    function burger(){
+        var navbar = document.getElementsByClassName("navbar");
+        var hamburger = document.getElementsByClassName("hamburger");
+        console.log(navbar);
+        if (navbar[0].style.display === "block") {
+            navbar[0].style.display = "none";
+            hamburger[0].style.display = "block";
+        } else {
+            navbar[0].style.display = "block";
+            hamburger[0].style.display = "none";
+        }
+    }
+
     // Thumbnail
     var thumbnailIndex = 1;
     showThumbnails(thumbnailIndex);
@@ -199,8 +212,6 @@
         favorites[favoriteIndex-1].style.display = "block";  
     }
     // End Favorites
-
-    
 </script>        
 </body>
 

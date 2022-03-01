@@ -140,9 +140,6 @@ class FunctionController extends Controller
 
         $snapshot = Snapshot::find($id)->update([
             'name' => $request->name,
-            'category' => $request->category,
-            'description' => $request->description,
-            'price' => $request->price,
             'path' => $request->path,
         ]);
 
@@ -203,9 +200,6 @@ class FunctionController extends Controller
 
         $thumbnail = Thumbnail::find($id)->update([
             'name' => $request->name,
-            'category' => $request->category,
-            'description' => $request->description,
-            'price' => $request->price,
             'path' => $request->path,
         ]);
 
