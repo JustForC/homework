@@ -1,0 +1,309 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.thumbnails {display: none}
+.snapshots {display: none}
+.favorites {display: none}
+
+/* Mulai CSS Thumbnail */
+/* Slideshow container */
+.thumbnail-container {
+  position: relative;
+  margin: auto;
+}
+
+.thumbnails{
+    height:600px;
+    background-position: 50% 50%;
+    background-size:100%;
+}
+/* Akhir css thumbnail */
+
+/* Mulai CSS Snapshot */
+/* Slideshow container */
+.snapshots-container {
+    position: relative;
+    margin: auto;
+    padding: 25px;
+    height:700px;
+    background-position: 50% 50%;
+    /* background-color: #A697C7; */
+  }
+  
+.snapshots{
+    height:500px;
+    background-position: 50% 50%;
+}
+.snapshotImage{
+    height:500px;
+    object-fit:contain;
+    border-radius: 5px;
+}
+
+.snapshotsTitle{
+    padding-top: 25px;
+    height:100px;
+    font: italic bold 35px Georgia, serif;
+    color: white;
+}
+/* Akhir CSS Snapshot */
+
+/* Mulai CSS Best Seller */
+/* Slideshow container */
+.favorites-container {
+    position: relative;
+    margin: auto;
+    padding: 25px;
+    height:700px;
+    background-position: 50% 50%;
+    /* background-color: #A697C7; */
+  }
+  
+.favorites{
+    height:500px;
+    background-position: 50% 50%;
+}
+
+.favoritesTitle{
+    padding-top: 25px;
+    height:100px;
+    font: italic bold 35px Georgia, serif;
+    color: white;
+}
+/* Akhir CSS Best Seller */
+
+
+.active, .dot:hover {
+    background-color: #717171;
+  }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+.bumper{
+    height: 500px;
+    background-position: 50% 0;
+}
+
+
+.footer{
+    background-color: #3a6d7b;
+}
+
+.sectionOne{
+    padding: 16px;
+    height:120px;
+}
+
+.upper{
+    height:50px;
+    color:white;
+    font-weight: bold;
+    font: italic bold 25px Georgia, serif;
+}
+
+.bottom{
+    height:50px;
+    padding-left: 42%;
+    padding-right: 42%;
+}
+
+.sectionTwo{
+    padding:  0px 16px 16px;
+    height: 60px;
+    color:white;
+    font-size: 14px;
+}
+.sectionThree{
+    padding: 16px;
+    height: 60px;
+    color:white;
+    font-size: 14px;
+}
+
+.container-black{
+    background-color:black;
+    height:700px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.left{
+    width: 60%;
+    height:600px;
+    float:left;
+    background-size: 100%;
+    background-position: 50% 50%;
+}
+
+.right{
+    border-radius: 10px;
+    width: 40%;
+    height: 550px;
+    background-color:white;
+    float:left;
+    margin-top:50px
+}
+
+.ourPartner{
+    height: 65px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font: bold 30px Georgia, serif;
+}
+
+.line{
+    height:225px;
+}
+
+.partner{
+    padding:10px;
+    height:215px;
+    width:33%;
+    float:left;
+    background-position: 50% 50%;
+    background-size: 150px;
+    background-repeat:no-repeat;
+}
+
+.icon{
+    height:30px;
+    width:33.3%;
+    float:left;
+    background-position: 50% 50%;
+    background-size: 25px;
+    background-repeat:no-repeat;
+}
+
+.icon:hover{
+    opacity: .4;
+}
+
+.navbar {
+    background-color: white;
+    position: relative;
+    top: 0;
+    height:70px;
+    width:100%;
+    padding-left:5.5%;
+    padding-right:7.5%;
+}
+
+.navbarA{
+    width:15%;
+    height:70px;
+    background-position: 50% 50%;
+    background-size: 145px;
+    background-repeat:no-repeat;
+    float:left;
+}
+
+.navbarB{
+    width:75%;
+    height:70px;
+    float:right;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+
+.navbarButton{
+    width:150px;
+    height:50px;
+    border-radius: 5px;
+    font: bold 14px Georgia, serif;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid #bdd1a2;
+    background-color: white;
+    color: #286a60;
+}
+
+.navbarButton:hover{
+    background-color:rgb(241, 241, 241);
+}
+
+.buttonTop{
+    height:50px;
+    width:150px;
+    border-radius: 5px;
+    font: bold 14px Georgia, serif;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid white;
+    background-color: white;
+    color: #375F9A;
+}
+
+.buttonTop:hover{
+    background-color:rgb(241, 241, 241);
+}
+
+.buttonBottom{
+    height:50px;
+    width:150px;
+    border-radius: 5px;
+    font: bold 14px Georgia, serif;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+}
+
+.buttonBottom:hover{
+    background-color: transparent;
+    filter:brightness(90%);
+}
+
+.buttonThumbnail{
+    width:25%;
+    float:center;
+    margin-left: 37.5%;
+    margin-right: 37.5%;
+    padding-top: 15%;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
